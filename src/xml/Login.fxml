@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <AnchorPane fx:id="leftArea" prefHeight="500.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcome" layoutX="57.0" layoutY="36.0" text="Welcome!" />
+            <Label fx:id="ola" layoutX="120.0" layoutY="195.0" text="Olá!" />
+            <Label fx:id="entre" layoutX="48.0" layoutY="258.0" prefHeight="48.0" prefWidth="193.0" text="Entre no sistema, usando &#10;seu id e senha ao lado!" />
+            <ImageView fx:id="imgSeta" fitHeight="165.0" fitWidth="280.0" layoutX="-7.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="rightArea" prefHeight="500.0" prefWidth="492.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="idUsuario" layoutX="117.0" layoutY="225.0" prefHeight="25.0" prefWidth="196.0" promptText="Digite seu id" />
+            <PasswordField fx:id="senhaUsuario" layoutX="116.0" layoutY="300.0" prefHeight="25.0" prefWidth="198.0" promptText="Digite sua senha" />
+            <Button fx:id="botaoLogin" depthTest="ENABLE" layoutX="166.0" layoutY="413.0" mnemonicParsing="false" onAction="#logar" style="-fx-border-radius: 45;" stylesheets="@../login.css" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="imageBotao" fitHeight="44.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Label fx:id="mensagem" alignment="CENTER" layoutX="78.0" layoutY="342.0" prefHeight="25.0" prefWidth="275.0" textFill="GREEN">
+               <graphic>
+                  <ImageView fx:id="warningIcon" fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+               </graphic></Label>
+            <ImageView fx:id="loginIcon" fitHeight="80.0" fitWidth="113.0" layoutX="154.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

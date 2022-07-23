@@ -1,0 +1,89 @@
+
+#rightAnchor{
+	-fx-background-color: #FFFAFA;
+}
+#labelIdItem, #labelMP, #labelTotal, #labelCliente{
+	-fx-text-fill: #1C1C1C;
+	-fx-font-size: 18px ;
+	-fx-font-family: Microsoft JhengHei Light;
+}
+#adicionarItem, #cancelarRegistro, #registraVenda{
+  -fx-background-color: white;
+  -fx-color: white;
+  -fx-text-fill: black;
+  -fx-font-size: 18px;
+  -fx-font-weight: 200;
+  -fx-font-family: 'Helvetica Neue', sans-serif;
+  -fx-color: white;
+  -fx-background-color: #fff;
+  -fx-border-radius: 45px;
+  -fx-cursor: pointer;
+  -fx-border-color: #00FF7F;
+}
+#cancelarRegistro, #registraVenda{
+	-fx-pref-width: 100px;
+}
+#adicionarItem:hover, #cancelarRegistro:hover, #registraVenda:hover{
+	-fx-background-radius: 45px;
+	-fx-background-color: #98FB98;
+}
+#botaoAdicionar, #botaoExcluir{
+	-fx-background-radius: 45px;
+	-fx-background-color: white;
+}
+#botaoAdicionar:hover, #botaoExcluir:hover{
+	-fx-background-radius: 45px;
+	-fx-background-color: #98FB98;
+}
+#botaoVoltar, #botao, #botaoAdicionarAtributo5, #botaoExcluirAtributo5, #botaoAdicionarAtributo6, #botaoExcluirAtributo6{
+	-fx-background-radius: 45px;
+	-fx-background-color: white;
+}
+#botaoVoltar:hover, #botao:hover, #botaoAdicionarAtributo5:hover, #botaoExcluirAtributo5:hover, #botaoAdicionarAtributo6:hover, #botaoExcluirAtributo6:hover{
+	-fx-background-radius: 45px;
+	-fx-background-color: #98FB98;
+}
+#atributo1, #atributo2, #atributo3, #atributo4, #atributo5, #atributo6, #atributo7{
+	-fx-font-family: Impact, sans-serif;
+	-fx-font-size: 17px;
+	-fx-text-fill: #98FB98;
+}
+#labelChave, #labelValor{
+	-fx-font-family: 'Trocchi', serif;
+	-fx-font-size: 17px;
+	-fx-text-fill: #3CB371;
+}
+#modoPagamento{
+	-fx-alignment: center;
+}
+#labelExibir{
+	-fx-font-size: 45px;
+	-fx-text-fill: #00FF7F;
+	-fx-font-family: Impact, Fantasy;
+}
+.table-view{
+	-fx-color: #00FF7F;
+
+}
+.table-cell:focused, .table-view:focused{
+    -fx-color: #00FF7F;
+}
+.table-view .column-header-background .label{
+	-fx-text-fill: white;
+	-fx-font-size: 12px;
+	-fx-font-family: 'Helvetica Neue', sans-serif;
+}
+.choice-box{
+	-fx-border-color: #00FF7F;
+	-fx-background-color: white;
+	-fx-border-radius: 30px;
+}
+.text-field {
+	-fx-accent: #00FF7F;
+	-fx-background-color: #b9b9b9, white;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-background-radius: 0;
+}
+.text-field:focused {
+	-fx-background-color: #007acc, white;
+}
